@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+
+\usepackage[backend=biber, citestyle=authoryear, style=ieee]{biblatex}
+\addbibresource{references.bib}
+
+\title{TITLE HERE}
+\author{Nikolai Magnussen}
+\date{\today}
+
+\begin{document}
+\begin{titlingpage}
+	\maketitle
+	\begin{figure}[hb]
+		\centering
+		\includegraphics[scale=3.4]{uit.pdf}
+	\end{figure}
+\end{titlingpage}
+
+\section*{Introduction}
+This is an example citation\cite{kake}.
+
+\section*{Technical Background}
+Here, I am citing an online source\cite{torsk}.
+
+\section*{Design}
+
+\section*{Implementation}
+
+\section*{Discussion}
+
+\section*{Conclusion}
+
+\printbibliography
+\end{document}
