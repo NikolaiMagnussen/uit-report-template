@@ -8,3 +8,6 @@
 *.log
 *.run.xml
 *.synctex.gz
+
+# Ignore report file
+report.pdf
