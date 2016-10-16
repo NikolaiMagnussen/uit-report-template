@@ -1,6 +1,8 @@
 \documentclass[12pt]{article}
 
 \usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage{multicol}
 \usepackage{titling}
 \usepackage{float}
 \usepackage[utf8]{inputenc}
@@ -20,6 +22,7 @@
 		\includegraphics[scale=3.4]{uit.pdf}
 	\end{figure}
 \end{titlingpage}
+\begin{multicols}{2}
 
 \section*{Introduction}
 This is an example citation\cite{kake}.
@@ -35,5 +38,8 @@ Here, I am citing an online source\cite{torsk}.
 
 \section*{Conclusion}
 
+\end{multicols}
+\begin{multicols}{2}
 \printbibliography
+\end{multicols}
 \end{document}
