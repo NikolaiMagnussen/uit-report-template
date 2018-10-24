@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
 
+\usepackage{blindtext} % Remove this when removing the blind text
 \usepackage{graphicx}
 \usepackage{fullpage}
 \usepackage{multicol}
@@ -11,7 +12,7 @@
 \addbibresource{references.bib}
 
 \title{TITLE HERE}
-\author{Nikolai Magnussen}
+\author{Navn Navnesen}
 \date{\today}
 
 \begin{document}
@@ -27,16 +28,24 @@
 \section*{Introduction}
 This is an example citation\cite{kake}.
 
+\blindtext
+
 \section*{Technical Background}
 Here, I am citing an online source\cite{torsk}.
 
+\blindtext
+
 \section*{Design}
+\Blindtext[2]
 
 \section*{Implementation}
+\blindtext
 
 \section*{Discussion}
+\Blindtext[2]
 
 \section*{Conclusion}
+\blindtext
 
 \end{multicols}
 \begin{multicols}{2}

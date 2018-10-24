@@ -6,13 +6,13 @@ all: open
 
 open: compile
 	$(info [*] Opening PDF)
-	@mupdf $(SRC).pdf
+	@xdg-open $(SRC).pdf
 
 compile: $(SRC).pdf clean_trash
 
 $(SRC).pdf: $(SRC).tex
 	$(info [*] Compiling document, please wait)
-	@latexmk -pdf $(SRC)
+	@latexmk -pdf $(SRC) > /dev/null
 
 clean: clean_trash
 	$(info [*] Removing compiled PDF document)
